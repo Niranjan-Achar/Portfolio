@@ -41,6 +41,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    
 }
 .header.sticky{
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
@@ -51,6 +52,7 @@ body {
     font-weight: 600;
     cursor: default;
     color: var(--text-color);
+    z-index: 1;
 }
 
 .navbar a {
@@ -63,6 +65,7 @@ body {
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
+    /* border-bottom: .5px solid rgb(255, 255, 255); */
 }
 
 #menu-icon {
@@ -359,4 +362,58 @@ footer{
     font-size: 2.4rem;
 }
 
+@media screen and (max-width:1200){
+    html{
+        font-size: 55%;
+    }
+}
 
+@media screen and (max-width:990px){
+    .header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+
+@media screen and (max-width:768px){
+    #menu-icon{
+        display: block;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .navbar{
+        position:absolute;
+        top: 0%;
+        left: 0;
+        width: 100%;
+        padding: 5rem 0 0 10% ;
+        background: var(--bg-color);
+        border-top: .5rem solid rgba(0, 0, 0, .1);
+        box-shadow: 0 .5rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home{
+        flex-direction: column;
+        margin-top: -5rem;
+    }
+    .home-content h1{
+        font-size: 4.2rem;
+    }
+    .home-content h3{
+        font-size: 2.4rem;
+    }
+}

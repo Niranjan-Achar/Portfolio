@@ -1,5 +1,14 @@
-// Scroll sections active links
 
+//Menu-Icon
+let mIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+mIcon.onclick = () =>{
+    mIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
+
+// Scroll sections active links
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -20,4 +29,8 @@ window.onscroll = () => {
     // Sticky Nav bar
     let header =document.querySelector('header');
     header.classList.toggle('sticky',window.scrollY > 100);
+
+    //Remove toggle icon when click navbar item
+    mIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
 };
