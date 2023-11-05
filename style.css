@@ -240,7 +240,7 @@ span {
 
 .portfolio-con .portfolio-box {
     position: relative;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
