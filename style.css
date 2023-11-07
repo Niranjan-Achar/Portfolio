@@ -499,3 +499,30 @@ footer {
         gap:2rem;
     }
 }
+@media screen and (max-width:450px) {
+    html{
+        font-size: 55%;
+    }
+     .contact form .input-box input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:390px) {
+    html{
+        font-size: 0.6rem;
+    }
+    .home-img img {
+        width: 80vw;
+    }
+
+    .about-img img {
+        width: 80vw;
+    }
+   
+
+    .footer {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+}
