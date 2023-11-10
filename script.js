@@ -40,12 +40,12 @@ window.onscroll = () => {
 ScrollReveal({
     // reset: true,
     distance: '80px',
-    duration: 1500,
+    duration: 2000,
     delay: 200
 });
 ScrollReveal().reveal('.heading,.home-img', { origin: 'top' });
 ScrollReveal().reveal('.home-content, .services-con, .portfolio-box, .contact-form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content h1, .about-img, .about-content p', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
