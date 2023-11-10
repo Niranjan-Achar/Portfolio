@@ -495,7 +495,7 @@ footer {
 
     .home-img img {
         width: 60vw;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     .about {
@@ -503,10 +503,7 @@ footer {
         align-items: center;
     }
 
-    .about-img img {
-        width: 75vw;
-        margin-bottom: 4rem;
-    }
+
 
     .services h2 {
         margin-bottom: 3rem;
@@ -582,6 +579,9 @@ footer {
         font-size: 60%;
     }
 
+    .home-content , .home-img{
+        transform: translateY(-15%);
+    }
     .home-img img {
         width: 50vw;
     }
