@@ -36,7 +36,6 @@ window.onscroll = () => {
 };
 
 // Scroll Reaveal
-
 ScrollReveal({
     // reset: true,
     distance: '80px',
@@ -51,6 +50,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 // Multi_text Reveal
 
+/*
 const typed = new Typed('.multi-text',{
     strings: ['Software Developer','Front-end Developer','UI / UX Designer'],
     typeSpeed:100,
@@ -58,5 +58,5 @@ const typed = new Typed('.multi-text',{
     backdelay:1000,
     loop:true
 })
-
+*/
 
