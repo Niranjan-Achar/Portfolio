@@ -59,7 +59,7 @@ const typed = new Typed('.multi-text',{
 
 
 // View Counter using Local Storage itseems🤧🤧
-
+/*
 var counterContainer = document.querySelector(".views");
 var resetButton = document.querySelector("#reset");
 var visitCount = localStorage.getItem("page_view");
@@ -80,5 +80,5 @@ resetButton.addEventListener("click", () => {
     localStorage.setItem("page_view", 1);
     counterContainer.innerHTML = visitCount;
 });
-
+*/
 
