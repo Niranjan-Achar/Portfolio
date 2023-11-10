@@ -47,3 +47,16 @@ ScrollReveal().reveal('.heading,.home-img', { origin: 'top' });
 ScrollReveal().reveal('.home-content, .services-con, .portfolio-box, .contact-form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
+
+// Multi_text Reveal
+
+const typed = new Typed('.multi-text',{
+    strings: ['Software Developer','Front-end Developer','UI / UX Designer'],
+    typeSpeed:100,
+    backSpeed:20,
+    backdelay:1000,
+    loop:true
+})
+
+
