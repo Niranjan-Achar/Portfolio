@@ -54,7 +54,7 @@ body {
     cursor: default;
     color: var(--text-color);
     z-index: 1;
-    font-family: 'carter one',sans-serif;
+    font-family: 'carter one', sans-serif;
     font-weight: 200;
 }
 
@@ -88,8 +88,9 @@ section {
     align-items: center;
     gap: 5px;
 }
-.home-content h1{
-    font-family: 'Oooh Baby',sans-serif;
+
+.home-content h1 {
+    font-family: 'Oooh Baby', sans-serif;
     font-size: 4rem;
     /*  
     Oooh baby
@@ -277,13 +278,13 @@ span {
     gap: 3rem;
 }
 
-.portfolio-con .portfolio-box {
+.portfolio-box {
     position: relative;
     border-radius: 1.5rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
-    width: 90%;
+    width: 95%;
 }
 
 .portfolio-box h4 {
@@ -493,8 +494,8 @@ footer {
     }
 
     .home-img img {
-        width: 65vw;
-        margin-bottom: 5rem;
+        width: 60vw;
+        margin-bottom: 2rem;
     }
 
     .about {
@@ -512,11 +513,40 @@ footer {
     }
 
     .services-box {
-        max-height: 25rem;
+        max-height: 21rem;
+        max-width: 90%;
     }
 
+    /* Servives box layers */
+
+    .services-con .services-box{
+        position: relative;
+        display: grid;
+        height: 100%;
+        width: 100%;
+        /* padding: 0 1rem ; */
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        transition: .5s ease;
+        color: rgb(255, 255, 255,1);
+        overflow: hidden;
+        /* transform: translateY(100%); */
+    }
+    .services-box .services-layer{
+        position: absolute;
+        transform: translateY(100%);
+        transition: 0.5s ease;
+    }
+    .services-box:hover .services-layer{
+        transform: translateY(0%);
+        color: rgb(255, 255, 255,1);
+        background-color: var(--second-bg-color);
+        padding-top:2rem;
+    }
     .services-box p {
-        display: none;
+        font-size: 1.4rem;
+        padding: 2rem ;
     }
 
     .services-box h3 {
@@ -545,40 +575,41 @@ footer {
     .about-content p {
         padding: 0 10rem 0 3rem;
     }
+}
 
-    @media screen and (max-width:450px) {
-        html {
-            font-size: 60%;
-        }
-
-        .home-img img {
-            width: 60vw;
-        }
-
-        .contact form .input-box input {
-            width: 100%;
-        }
-
-        .about-content p {
-            padding: 0 6rem 0 2rem;
-        }
+@media screen and (max-width:450px) {
+    html {
+        font-size: 60%;
     }
 
-    @media screen and (max-width:391px) {
-        html {
-            font-size: 55%;
-        }
-
-        .home-img img {
-            width: 60vw;
-        }
-
-        .footer {
-            flex-direction: column-reverse;
-            gap: 1.5rem;
-        }
-
-        .about-content p {
-            padding: 0 3rem 0 3rem;
-        }
+    .home-img img {
+        width: 60vw;
     }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+
+    .about-content p {
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+@media screen and (max-width:391px) {
+    html {
+        font-size: 55%;
+    }
+
+    .home-img img {
+        width: 60vw;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    .about-content p {
+        padding: 0 1.5rem 0 3rem;
+    }
+}
