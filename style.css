@@ -43,6 +43,12 @@ body {
     z-index: 100;
 
 }
+.views{
+    font-size: 2rem;
+}
+#reset{
+    padding: 0.5rem 1.5rem;
+}
 
 .header.sticky {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
