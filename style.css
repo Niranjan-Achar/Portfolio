@@ -438,7 +438,7 @@ footer {
     }
 
     .home {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .home-content h1 {
@@ -450,8 +450,8 @@ footer {
     }
 
     .home-img img {
-        width: 70vw;
-        margin-top: 4rem;
+        width: 65vw;
+        margin-bottom: 5rem;
     }
 
     .about {
@@ -469,7 +469,7 @@ footer {
     }
 
     .services-box {
-        max-height: 20rem;
+        max-height: 25rem;
     }
 
     .services-box p {
@@ -501,7 +501,7 @@ footer {
 }
 @media screen and (max-width:450px) {
     html{
-        font-size: 55%;
+        font-size: 60%;
     }
      .contact form .input-box input{
         width: 100%;
@@ -510,7 +510,7 @@ footer {
 
 @media screen and (max-width:390px) {
     html{
-        font-size: 0.6rem;
+        font-size: 60%;
     }
     .home-img img {
         width: 80vw;

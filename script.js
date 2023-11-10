@@ -3,7 +3,7 @@
 let mIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-mIcon.onclick = () =>{
+mIcon.onclick = () => {
     mIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 };
@@ -27,10 +27,23 @@ window.onscroll = () => {
     });
 
     // Sticky Nav bar
-    let header =document.querySelector('header');
-    header.classList.toggle('sticky',window.scrollY > 100);
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 100);
 
     //Remove toggle icon when click navbar item
     mIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
+
+// Scroll Reaveal
+
+ScrollReveal({
+    reset: true,
+    distance: '80px',
+    duration: 1500,
+    delay: 200
+});
+ScrollReveal().reveal('.heading,.home-img', { origin: 'top' });
+ScrollReveal().reveal('.home-content, .services-con, .portfolio-box, .contact-form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
