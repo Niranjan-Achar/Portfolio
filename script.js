@@ -39,15 +39,12 @@ window.onscroll = () => {
 
 ScrollReveal({
     // reset: true,
-    distance: '50px',
+    distance: '100px',
     duration: 2000,
     delay: 200
 });
-ScrollReveal().reveal('.heading,.home-img', { origin: 'top' });
-ScrollReveal().reveal('.home-content, .services-con, .portfolio-box, .contact-form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img, .about-content p', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
-
+ScrollReveal().reveal('.heading,.home-img,.home-content h1,.home-content p',{ origin: 'top' });
+ScrollReveal().reveal('.home-content, .services-con, .about-content .portfolio-box, .contact-form,.about-content p', { origin: 'bottom' });
 
 // Multi_text Reveal
 
