@@ -597,6 +597,7 @@ footer {
 }
 
 @media screen and (max-width:391px) {
+
     html {
         font-size: 55%;
     }
@@ -613,4 +614,5 @@ footer {
     .about-content p {
         padding: 0 1.5rem 0 3rem;
     }
+
 }
