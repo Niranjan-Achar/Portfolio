@@ -535,6 +535,7 @@ footer {
         position: absolute;
         transform: translateY(100%);
         transition: 0.5s ease;
+        height: ;
     }
     .services-box:hover .services-layer{
         transform: translateY(0%);

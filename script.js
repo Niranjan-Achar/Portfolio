@@ -50,7 +50,7 @@ ScrollReveal().reveal('.home-content, .services-con, .about-content .portfolio-b
 
 
 const typed = new Typed('.multi-text',{
-    strings: ['Software Developer','Front-end Developer','UI / UX Designer'],
+    strings: ['Software Developer','Digital Marketer','UI / UX Designer'],
     typeSpeed:100,
     backSpeed:20,
     backdelay:1000,
