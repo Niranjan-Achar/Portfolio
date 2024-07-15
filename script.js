@@ -1,3 +1,17 @@
+// scripts.js
+// const form = document.getElementById('contact-form');
+// const alert = document.querySelector(".alert");
+// form.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     alert.style.display = "block"
+//     setTimeout(() => {
+//         alert.style.display = "none"
+//     }, 5000)
+
+//     form.reset();
+// })
+
+
 
 //Menu-Icon
 let mIcon = document.querySelector('#menu-icon');

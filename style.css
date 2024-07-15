@@ -424,6 +424,27 @@ footer {
     font-size: 2.4rem;
 }
 
+.alert {
+    display: none;
+    color: rgb(144, 236, 164);
+    font-size: 2rem;
+    text-align: center;
+    border: 3px solid #ddd;
+    box-shadow: 0 4px 20px 0 rgb(129, 245, 129);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 15px;
+    margin: 1% 33% -3% 33%;
+    padding: 1% 0;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
 @media screen and (max-width:1200) {
     html {
         font-size: 55%;
@@ -460,6 +481,9 @@ footer {
         z-index: 1;
     }
 
+    .alert{
+        margin: 0 10% -12% 10%;
+    }
     .navbar {
         position: absolute;
         top: 0%;
@@ -535,7 +559,6 @@ footer {
         position: absolute;
         transform: translateY(100%);
         transition: 0.5s ease;
-        height: ;
     }
     .services-box:hover .services-layer{
         transform: translateY(0%);
