@@ -12,6 +12,15 @@
 // })
 
 
+// Multi_text Reveal
+const typed = new Typed('.multi-text', {
+    strings: ['Software Developer', 'Digital Marketer', 'UI / UX Designer'],
+    typeSpeed: 100,
+    backSpeed: 20,
+    backdelay: 1000,
+    loop: true
+})
+
 
 //Menu-Icon
 let mIcon = document.querySelector('#menu-icon');
@@ -60,16 +69,7 @@ ScrollReveal({
 ScrollReveal().reveal('.heading,.home-img,.home-content h1,.home-content p',{ origin: 'top' });
 ScrollReveal().reveal('.home-content, .services-con, .about-content .portfolio-box, .contact-form,.about-content p', { origin: 'bottom' });
 
-// Multi_text Reveal
 
-
-const typed = new Typed('.multi-text',{
-    strings: ['Software Developer','Digital Marketer','UI / UX Designer'],
-    typeSpeed:100,
-    backSpeed:20,
-    backdelay:1000,
-    loop:true
-})
 
 
 // View Counter using Local Storage itseems🤧🤧
